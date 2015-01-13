@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://www.hackerrank.com/contests/101june13/challenges/assignment -->
+<html class="wf-museosans-i3-active wf-museosans-i7-active wf-museosans-n1-active wf-museosans-n3-active wf-museosans-n7-active wf-active"><meta style="visibility: hidden !important; display: block !important; width: 0px !important; height: 0px !important; border-style: none !important;"><embed id="__IDM__" type="application/x-idm-downloader" width="1" height="1" style="visibility: hidden !important; display: block !important; width: 1px !important; height: 1px !important; border-style: none !important; position: absolute !important; top: 0px !important; left: 0px !important;"></meta><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- General Information -->
+    <title>Challenges | Programming problems and challenges | HackerRank</title>
+    <script src="./Challenges   Programming problems and challenges   HackerRank_files/beacon.js" async=""></script><script src="./Challenges   Programming problems and challenges   HackerRank_files/2746.js" async="" type="text/javascript"></script><script type="text/javascript" async="" src="./Challenges   Programming problems and challenges   HackerRank_files/saved_resource"></script><script type="text/javascript" async="" src="./Challenges   Programming problems and challenges   HackerRank_files/saved_resource(1)"></script><script type="text/javascript" async="" src="./Challenges   Programming problems and challenges   HackerRank_files/ga.js"></script><script type="text/javascript" async="" src="./Challenges   Programming problems and challenges   HackerRank_files/mixpanel-2.2.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dashboard-15c4463fb05046fa58fc4807ff18ab3a" src="./Challenges   Programming problems and challenges   HackerRank_files/dashboard-15c4463fb05046fa58fc4807ff18ab3a.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="https://d3rpyts3de3lx8.cloudfront.net/hackerrank/assets/compound/challenge-views-9f324762a95b057fc4c57a952dd95068.js" src="./Challenges   Programming problems and challenges   HackerRank_files/challenge-views-9f324762a95b057fc4c57a952dd95068.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="https://d3rpyts3de3lx8.cloudfront.net/hackerrank/assets/compound/submission-views-e8135f6daf949dce9dc8460cb972dd1c.js" src="./Challenges   Programming problems and challenges   HackerRank_files/submission-views-e8135f6daf949dce9dc8460cb972dd1c.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="https://d3rpyts3de3lx8.cloudfront.net/hackerrank/assets/compound/game-views-68cdb3e090e5194fe49feb72a25290ff.js" src="./Challenges   Programming problems and challenges   HackerRank_files/game-views-68cdb3e090e5194fe49feb72a25290ff.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="https://d3rpyts3de3lx8.cloudfront.net/hackerrank/assets/moment.js" src="./Challenges   Programming problems and challenges   HackerRank_files/moment.js"></script><!--<base href="https://www.hackerrank.com/">--><base href=".">
+    <script id="facebook-jssdk" src="./Challenges   Programming problems and challenges   HackerRank_files/all.js"></script><script>
+      var _errs=["50b78854cb2e10773a00002d"];
+      _errs.meta = {
+        handle: "Klick"
+      };
+      (function(a,b){a.onerror=function(){_errs.push(arguments)};
+      var d=function(){var a=b.createElement("script"),c=b.getElementsByTagName("script")[0];
+      a.src="//d15qhc0lu1ghnk.cloudfront.net/beacon.js";a.async=!0;
+      c.parentNode.insertBefore(a,c)};a.addEventListener?a.addEventListener("load",d,!1):
+      a.attachEvent("onload",d)})(window,document);
+    </script>
+
+    <script type="text/javascript">
+      var HR;
+      HR = window.HR || {};
+      HR.PREFETCH_DATA = {"slugs":{"master":{"type":"contest"},"Klick":{"type":"hacker"}},"contest":{"created_at":"2012-07-19T17:13:20Z","description":"","endtime":null,"expose_stats":null,"homepage_background_color":"","id":1,"name":"Master","notification":null,"public":false,"slug":"master","starttime":null,"tagline":"","timezone":"America/Los_Angeles","updated_at":"2013-06-29T08:38:21Z","started":true,"ended":false,"epoch_endtime":0,"epoch_starttime":0,"time_left":null,"has_tracks":true,"archived":false,"leaderboard_type":"country","categories":[{"id":52,"name":"Artificial Intelligence","slug":"ai","children":[{"id":51,"name":"Bot Building","slug":"introduction"},{"id":61,"name":"A* Search","slug":"astar-search"},{"id":23,"name":"Alpha Beta Pruning","slug":"alpha-beta-pruning"},{"id":8,"name":"Combinatorial Search Theory","slug":"combinatorial-search-theory"},{"id":9,"name":"Richman Games","slug":"richman-games"},{"id":53,"name":"Cellular Automation Games","slug":"cellular-automation-games"},{"id":2,"name":"Machine Learning","slug":"machine-learning"}]},{"id":55,"name":"Algorithms","slug":"algorithms","children":[{"id":6,"name":"Sorting","slug":"sorting"},{"id":36,"name":"Regex","slug":"regex"},{"id":7,"name":"Search","slug":"search"},{"id":10,"name":"Dynamic Programming","slug":"dynamic-programming"},{"id":12,"name":"Strings","slug":"strings"},{"id":11,"name":"Graph Theory","slug":"graph-theory"},{"id":13,"name":"Math","slug":"maths"},{"id":14,"name":"Bit Manipulation","slug":"bit-manipulation"},{"id":49,"name":"NP Complete problems","slug":"np-complete-problems"}]},{"id":59,"name":"Miscellaneous Code Golf","slug":"miscellaneous","children":[{"id":57,"name":"Normal Languages","slug":"normal-languages"},{"id":58,"name":"Esoteric Languages","slug":"esoteric-languages"}]}],"primary_tags":[{"id":6,"is_track":true,"name":"Sorting","slug":"sorting","weightage":1.0},{"id":7,"is_track":true,"name":"Search","slug":"search","weightage":2.0},{"id":8,"is_track":true,"name":"Combinatorial Search Theory","slug":"combinatorial-search-theory","weightage":3.0},{"id":9,"is_track":true,"name":"Richman Games","slug":"richman-games","weightage":4.0},{"id":10,"is_track":true,"name":"Dynamic Programming","slug":"dynamic-programming","weightage":6.0},{"id":11,"is_track":true,"name":"Graph Theory","slug":"graph-theory","weightage":7.0},{"id":12,"is_track":true,"name":"Strings","slug":"strings","weightage":8.0},{"id":13,"is_track":true,"name":"Math","slug":"maths","weightage":9.0},{"id":14,"is_track":true,"name":"Bit Manipulation","slug":"bit-manipulation","weightage":10.0},{"id":49,"is_track":true,"name":"NP Complete problems","slug":"np-complete-problems","weightage":12.0},{"id":57,"is_track":false,"name":"Normal Languages","slug":"normal-languages","weightage":0.0},{"id":58,"is_track":true,"name":"Esoteric Languages","slug":"esoteric-languages","weightage":0.0}]},"challenges":{},"metadata":{"landing_contest_slug":"master","using_contest_namespace":false,"asset_path":"https://d3rpyts3de3lx8.cloudfront.net/hackerrank/assets","filepicker_key":"ApehXMbvXTWqWab7OmMr9z"},"profile":{"id":64167,"username":"Klick","company":"Qualcomm","country":"India","school":"Indian Institute of Technology, Delhi","languages":"","created_at":"2013-01-06T07:38:27Z","email":"klickans@gmail.com","fb_uid":null,"gh_uid":null,"li_uid":null,"is_admin":false,"avatar":"https://www.filepicker.io/api/file/QtSVOJCtSAhLKSi3hIqM/convert?w=80&h=80","website":"www.klick.tk","hack":"","name":"Khaleeque Ansari","hacko_amount":201,"errors":{},"invites_remaining":10,"confirmed":true,"facebook_allow_opengraph":null,"tsize":"L","is_migrated":true,"facebook_opengraph_access_available":null,"promised_login_time":null,"last_logout_feedback":null,"chat_enabled":true,"username_autoset":false,"key_prefix":"64167-3a0527a755f70c2d753e08a5601bb94acf3ea2bb","current_streak":5,"notifications_url":"https://notifications.hackerrank.com/subscribe/64167-4f4d7e41ad7a68c0716f60c12fdb719cf93bfced"},"timestamp":1372528981};
+      HR.MANIFEST_HASH = "3aefe8f344227196be64208b8d701e8f";
+    </script>
+    <!-- Analytics, Error Tracking, Fonts, Features -->
+<!-- fragmenting for google bot -->
+<meta name="fragment" content="!">
+<link rel="apple-touch-icon-precomposed" href="https://d3rpyts3de3lx8.cloudfront.net/hackerrank/assets/apple-touch-icon-precomposed-78c25a714410571342d43c61e34d9a8d.png">
+<link href="https://d3rpyts3de3lx8.cloudfront.net/hackerrank/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+<meta charset="utf-8">
+<meta property="og:title" content="HackerRank">
+<meta property="og:image" content="https://www.hackerrank.com/assets/logo_green.png">
+<meta property="og:description" content="Where hackers hangout to solve interesting Computer Science challenges">
+<meta name="description" content="Programming problems and contests in different domains of Computer Science. Solve interesting and challenging programming problems">
+<meta property="fb:app_id" content="347499128655783">
+<meta property="og:url" content="https://www.hackerrank.com/challenges">
+<meta property="og:site_name" content="HackerRank">
+
+<meta content="authenticity_token" name="csrf-param">
+<meta content="aOT0TFkEZD9JM1Z10bBoPcB4mZdu3UAPtV3F7s+GoMM=" name="csrf-token">
+<script type="text/javascript" src="./Challenges   Programming problems and challenges   HackerRank_files/hyl2muw.js"></script><style type="text/css"></style>
+<style type="text/css">.tk-museo-sans{font-family:"museo-sans",sans-serif;}</style><link rel="stylesheet" href="https://use.typekit.net/c/3bd2af/museo-sans:i3:i7:n1:n3:n7.PyB:F:2,PyG:F:2,Py8:F:2,Py6:F:2,PyF:F:2/d?3bb2a6e53c9684ffdc9a9bf4135b2a625d2f4b913c6083f29a411497d8bee7cf0bb67e3cd9c0dd11e4bd69f65709cbe57458e5045ab89ce1936eb8df2f66d35d720a62ae9aa50ab0a0555a903a71eaf0198186f874cd587cc245b05b59ce46e08cbb8354a705d60f04eda17dc9e8ea2b79bc344cfa750c72a05d031976e12f3d6a"><script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-34263604-1']);
+    _gaq.push(['_trackPageview']);
+    _gaq.push(['_setCampSourceKey', 'utm_source']);
+    _gaq.push(['_setCampMediumKey', 'utm_medium']);
+    _gaq.push(['_setCampContentKey', 'utm_keyword']);
+    _gaq.push(['_setCampTermKey', 'utm_keyword']);
+    _gaq.push(['_setCampNameKey', 'utm_campaign']);
+</script>
+<!--[if lt IE 9]>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js" type="text/javascript"></script>
+<![endif]-->
+
+<!-- Chrome Frame for IE6 -->
+<!--[if lt IE 7 ]>
+ <script src="https://ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script><script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+<![endif]-->
+<!--[if IE]><script src="assets/excanvas.js"></script><![endif]-->
+
+
+    <!-- Stylesheets -->
+    <link href="./Challenges   Programming problems and challenges   HackerRank_files/libraries-8f735215d502e161895fce796284036d.css" media="all" rel="stylesheet" type="text/css">
+    <link href="./Challenges   Programming problems and challenges   HackerRank_files/dashboard-bbf5d41f9ca47738eceb2bbf136c2fc1.css" media="all" rel="stylesheet" type="text/css">
+
+    <!-- Javascripts -->
+    <script src="./Challenges   Programming problems and challenges   HackerRank_files/libraries-c889822225a212ba50c2ff1cb9d32591.js" type="text/javascript"></script>
+    <script src="./Challenges   Programming problems and challenges   HackerRank_files/codemirror-c02c50cdeaae53d01ccf6250105b52b4.js" type="text/javascript"></script>
+    <script src="./Challenges   Programming problems and challenges   HackerRank_files/hackerrank-f5ebc71357aad4b386249acda3298813.js" type="text/javascript"></script>
+
+    <!--[if lte IE 9]>
+    <script>
+    IE_BROWSER = true
+    </script>
+    <![endif]-->
+    <script data-main="https://d3rpyts3de3lx8.cloudfront.net/hackerrank/assets/dashboard-15c4463fb05046fa58fc4807ff18ab3a.js" src="./Challenges   Programming problems and challenges   HackerRank_files/require-cbcee4d66613f44143bd44ae99f95938.js"></script>
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://www.hackerrank.com/rest/blogs.rss">
+
+    <!-- Render all backbone/underscore templates -->
+    <script type="text/template" id="challenges">
+    <div class="light-wrap wrap container content-wrap wide">
+        <% if (contest.slug == 'master') { %>
+        <div class="tab-sidebar pull-left inline-sidebar track-nav-wrapper">
+            <div class="sidebar-nav-wrap">
+                <div class="sidebar-header clearfix">
+                    <span class="header-btn-group pull-right">
+                        <a class="btn btn-white backbone" href="/dashboard"><i class="icon-chart-pie"></i> Dashboard</a>
+                    </span>
+                </div>
+                <ul class="tab-list tab-buttons unstyled">
+                    <% categories.each(function(category) { %>
+                    <span class="challenges-list-heading tracks-toggle" data-slug="<%= category.get('slug') %>"><%= category.get("name") %></span>
+                    <span class="<%= category.get('slug') %>-wrapper <%= category.active? '': '' %>">
+                        <% category.children().each(function(track) { %>
+                        <li class="<%= track.active ? 'active':'' %> ">
+                            <a class="backbone change-track" data-track="<%= track.get('slug') %>" href="<%= track.pageURL() %>">
+                                <span class="track-heading">
+                                    <span class="track-title">Track <%= getTrackIndex() %></span>
+                                    <span class="track-name track-content"><%= track.get('name') %></span>
+                                </span>
+                            </a>
+                        </li>
+                        <% }) %>
+                    </span>
+                    <% }) %>
+                </ul>
+            </div>
+        </div>
+        <% } %>
+        <div class="inline-content tab-content pull-right<% if (contest.slug != 'master') { %> full-width<% } %>">
+            <div class="content-header">
+                <% if (track) { %>
+                <a href="/tracks/<%= track.slug %>/leaderboard" rel="tooltip" title="<%= track.name %> Leaderboard" class="btn btn-white pull-left backbone">
+                    <i class="icon-trophy"></i>
+                </a>
+                <% } %>
+
+                <span class="search_form pull-right">
+                    <form class="form-search pull-right">
+                        &nbsp;
+                        <input type="text" id="search-text" class="input-medium search-query" autocomplete="off">
+                        <i class="icon-search"></i>
+                    </form>
+                    <div class="search-result hide" style="display: none; width: 142px;">
+                        <ul class="unstyled">
+                        </ul>
+                    </div>
+                </span>
+            </div>
+            <div class="tab-pane active">
+                <div class="challenges-list"></div>
+                <div class="pagination-wrapper">
+                </div>
+            </div>
+        </div>
+</script>
+
+<script type="text/template" id="challenges-list">
+    <div id="contest-challenges-problem" class="challenge-list-item clearfix">
+        <ul class="pull-left challenge-links unstyled">
+            <% if(model.can_be_viewed) { %>
+            <li class=""><a href="<%= baseURL %>/forum/questions" class="backbone submit" data-analytics="ViewForum"><i class="icon-comment"></i></a></li>
+            <% } %>
+            <li class=""><a href="<%= baseURL %>/leaderboard" class="backbone submit" data-analytics="ChallengeLeaderboard"><i class="icon-trophy"></i></a></li>
+            <% if(model.can_be_viewed) { %>
+            <li class=""><a href="<%= baseURL %>/submissions" class="backbone"><i class="icon-list-bullet-small"></i></a></li>
+            <% } %>
+        </ul>
+        <div class="pull-left challenge-body<% if (contest != null && contest.slug != 'master') { %> full-width<% } %>">
+            <% if(model.solved) {%>
+            <div class="completed-ribbon">
+            </div>
+            <%}%>
+            <header class="clearfix">
+                <!--<p class="title no-flow">Tutorial</p>-->
+                <h2 class="small challenge-title"><a href="<%= baseURL %>" class="backbone"><%= model.name %></a>
+                <% if (model.kind == "code") { %>
+                  <p class="no-flow pull-right challenge-score">Max score: <strong><%= model.max_score %></strong></p>
+                <% } %></h2>
+            </header>
+            <% if(model.can_be_viewed) { %>
+            <p class="question-text body-text no-flow"><%= model.preview || "" %></p>
+            <% } else {%>
+            <p class="question-text body-text no-flow"><%= model.requirements_description || "" %></p>
+            <% } %>
+
+            <div class="question-sub clearfix">
+                <p class="no-flow stats pull-left"><%= model.total_count %> Submission<% if (model.total_count != 1) { %>s<% } %></p>
+
+                <a class="progress" rel="tooltip" title="<%= model.solved_count %> successful submissions of <%= model.total_count %>">
+                    <div class="bar">
+                    </div>
+                </a>
+
+                <% if(model.can_be_viewed) { %>
+                <a href="<%= baseURL %>" data-slug="<%= model.slug %>"
+                   class="btn <%= model.attempted ? 'btn-white' : 'btn-primary' %> backbone start pull-right span2"
+                   data-analytics="<%= model.attempted? 'TryAgain' : 'SolveChallenge' %>">
+                    <%= model.attempted? 'Try Again' : 'Solve Challenge' %>
+                </a>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/template" id="bread-crumbs">
+  <ul class="breadcrumb unstyled horizontal">
+    <% collection.each(function(crumb){ %>
+    <li>
+      <a href="<%= crumb.get('path') %>" class="backbone">
+        <%= crumb.get('name') %>
+      </a>
+      <i class="icon-right-open-big divider"></i>
+    </li>
+    <% }) %>
+  </ul>
+</script>
+
+<script type="text/template" id="search-item">
+  <li class="search-item">
+    <a class="text backbone" href="<%= path %>"><%= name %></a>
+    <span class="pull-right">
+      <ul class="pull-right challenge-links horizontal unstyled">
+        <li class=""><a href="<%= path %>/forum/questions" class="backbone submit" data-analytics="ViewForum"><i class="icon-comment"></i></a></li>
+        <li class=""><a href="<%= path %>/leaderboard" class="backbone submit" data-analytics="ChallengeLeaderboard"><i class="icon-trophy"></i></a></li>
+        <li class=""><a href="<%= path %>/submissions" class="backbone"><i class="icon-list-bullet-small"></i></a></li>
+      </ul>
+    </span>
+  </li>
+</script>
+
+<script type="text/template" id="app-search">
+  <form class="form-search pull-right">
+    <input type="text" id="search-text" class="input-medium search-query" autocomplete="off">
+    <i class="icon-search"></i>
+  </form>
+  <div class="search-result hide">
+    <ul class="unstyled"></ul>
+  </div>
+</script>
+
+<script type="text/template" id="stickynote">
+  <ul class="stickynote" ></ul>
+</script>
+<script type="text/template" id="stickynote-item">
+  <a class="cursor">
+    <button type="button" class="close btn-close" style="float: right; width: 16px; color:#333">×</button>
+    <p><%= content %></p>
+  </a>
+</script>
+
+<script type="text/template" id="contests">
+  <section class="contests">
+    <div class="light-wrap wrap container wide content-wrap">
+      <% if(contests.length === 0 && contests.sync_status) { %>
+      <div class="tab-content" style="padding: 10px">
+          No contests available
+      </div>
+      <% } else { %>
+      <div class="tab-sidebar span3 inline-sidebar sidebar-nav-wrap">
+        <div class="sidebar-header clearfix">
+          <span class="header-btn-group pull-right">
+            <a class="btn btn-orange" href="/rest/contests/upcoming.rss" target="_blank"><i class="icon-rss"></i></a>
+          </span>
+        </div>
+        <ul class="tab-list tab-buttons unstyled">
+          <span class="challenges-list-heading">Active Contests</span>
+          <div class="tab-list-active"></div>
+          <span class="challenges-list-heading">Archived Contests</span>
+          <div class="tab-list-archived"></div>
+        </ul>
+      </div>
+
+      <div class="inline-content tab-content pull-right">
+        <div class="content-header">
+          <% if (contest) { %>
+          <!-- <a href="" class="pull-left">View contest details</a> -->
+          <a href="/contests/<%= contest.get('slug') %>/submissions" target="_blank" rel="tooltip" title="<%= contest.get('name') %> Submissions" class="btn btn-white pull-right">
+            <i class="icon-list-bullet-small"></i>
+          </a>
+          <a href="/contests/<%= contest.get('slug') %>/leaderboard" target="_blank" rel="tooltip" title="<%= contest.get('name') %> Leaderboard" class="btn btn-white pull-right">
+            <i class="icon-trophy"></i>
+          </a>
+          <% } %>
+        </div>
+        <div class="tab-pane active">
+          <div class="challenges-list">
+          </div>
+          <div class="pagination-wrapper"></div>
+        </div>
+      </div>
+      <% } %>
+    </div>
+  </section>
+</script>
+
+<script type="text/template" id="contests-tab">
+    <li class="<%= model.active ? 'active':'' %>">
+        <a class="change-track backbone" href="/contests/<%= model.get('slug') %>">
+            <span class="track-heading"><span class="track-title"><%= model.get('name') %></span></span>
+            <span class="contest-status">
+                <small>
+                    <% if (model.get('archived')) { %>
+                    <i class="status-indicator completed"></i>
+                    Ended
+                    <% if (model.nextMilestone()) { %>
+                    <time class="timeago" datetime="<%= model.nextMilestone().toISOString() %>">
+                        <%= model.nextMilestone().toString() %>
+                    </time>
+                    <% } %>
+                    <% } else if (model.get('ended')) { %>
+                    <i class="status-indicator completed"></i>
+                    Ended
+                    <% } else if (model.get('started') && model.get('time_left')) { %>
+                    <i class="status-indicator active"></i>
+                    In Progress. Ends
+                    <time class="timeago" datetime="<%= model.nextMilestone().toISOString() %>">
+                        <%= model.nextMilestone().toString() %>
+                    </time>
+                    <% } else if (model.get('time_left')) { %>
+                    <i class="status-indicator pending"></i>
+                    Starts
+                    <time class="timeago" datetime="<%= model.nextMilestone().toISOString() %>">
+                        <%= model.nextMilestone().toString() %>
+                    </time>
+                    <% } %>
+                </small>
+            </span>
+        </a>
+    </li>
+</script>
+
+<script type="text/template" id="e404">
+    <style>
+        .error-container {
+            background: #fbfbfb;
+            border: 1px solid #ddd;
+            width: 800px;
+            margin: auto;
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+        }
+        .error-links {
+            list-style: none;
+        }
+        .error-msgs {
+            background-color: #fbfbfb;
+            margin: 0px;
+            padding: 0px;
+            font-weight: bold;
+        }
+        .error-container-inner {
+            padding: 5px 10px;
+            background-color: #fbfbfb;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+        .puzzle {
+            width: 800px;
+            margin: auto;
+            background: #fbfbfb;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-top: 20px;
+        }
+        .title {
+            font-weight: bold;
+        }
+        .instructions {
+            font-weight: bold;
+        }
+        .source {
+            font-family: verdana;
+            text-align: right;
+            font-size: 11px;
+        }
+    </style>
+    <div class="error-container">
+        <p class="error-msgs">You step in the stream, but the water has moved on. This page is not here.</p>
+        <div class="error-container-inner">
+            <p> You may have clicked an expired link or mistyped the address. Some web addresses are case sensitive.</p>
+            <ul class="error-links">
+                <% if (HR.appController.is_using_contest_namespace()) { %>
+                <li><a href="<%= HR.appController.get_contest_namespace() %>">Return Home</a></li>
+                <% } else { %>
+                <li><a href="/">Return Home</a></li>
+                <% } %>
+                <li><a style="cursor: pointer;" onclick="javascript: (function() { history.back(); return false;})();">Go back to the previous page</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="puzzle">
+        <p class="title m">Interesting puzzle</p>
+        <p>There are 2n balls labeled from 1 to 2n. The balls are distributed equally between two identical boxes. We know that each box contains n balls, but don't know which ball is in which box. We wish to learn the grouping of the balls by asking questions of the form "Is ball i and ball j in the same box?".</p>
+        <p class="m"><img width="448" height="151" src="https://s3.amazonaws.com/hr-challenge-images/puzzle.jpg"></p>
+        <p>For example, if n=3 we can learn the grouping by asking four questions: for 2&#x2264;j&#x2264;5 ask "Is ball 1 and ball j in the same box?". It is easy to see that, in general, we can learn the grouping in 2n-2 questions.</p>
+        <p>Can you do better than that?</p>
+        <p class="instructions">Mail your solutions to hackers [at] hackerrank.com. The correct answers will have a surprise</p>
+        <p class="source">source: musealgo</p>
+    </div>
+</script>
+
+<script type="text/template" id="eLogin">
+  <div style="width: 600px; margin: auto; margin-top: 10%; border: #5E781B solid 2px; padding: 0px;">
+    <p style="background-color: #5E781B; color: #f0f0f0; margin: 0px; padding: 5px 10px; font-weight: bold;"><img style="float:left" src="/assets/alert.png">&nbsp; The page you're seeking, requires authenticated hacker.</p>
+    <div style="padding: 5px 10px; background-color: #fbfbfb;">
+      <p style="padding: 0px; margin: 0px;"> You have landed on a page which is accessible only by authorised user. Please Login to view this page.</p>
+      <ul>
+        <li style="color: #5E781B; list-style-type: square;"><a class="loginBtn" href="/auth/login">Login to HackerRank</a></li>
+        <% if (HR.appController.is_using_contest_namespace()) { %>
+        <li style="color: #5E781B; list-style-type: square;"><a href="<%= HR.appController.get_contest_namespace() %>">Return Home</a></li>
+        <% } else { %>
+        <li style="color: #5E781B; list-style-type: square;"><a href="/">Return Home</a></li>
+        <% } %>
+        <li style="color: #5E781B; list-style-type: square;"><a style="cursor: pointer;" onclick="javascript: (function() { history.back(); return false;})();">Go back to the previous page</a></li>
+      </ul>
+    </div>
+  </div>
+</script>
+
+<script type="text/template" id="navigation">
+  <header id="page-header">
+    <nav class="page-nav container navbar">
+      <span class="nav-logo"></span>
+      <span class="nav-login-patch"></span>
+      <span class="nav-buttons"></span>
+    </nav>
+  </header>
+</script>
+
+<script type="text/template" id="nav-login-patch">
+  <% if (profile && profile.isLoggedIn()) { %>
+  <!-- Logout confirmation modal -->
+  <div id="logoutConfirmation" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="logoutConfirmationLabel" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <h3 id="logoutConfirmationLabel">Logout?</h3>
+    </div>
+    <div class="modal-body">
+      <p>We&apos;ll really miss you :(</p><p>Could you tell us what we could do to improve your experience?</p>
+      <textarea placeholder="Feedback" id="logout-feedback" style="height: 160px; width: 98%;"></textarea>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+      <button id="confirm-logout" class="btn btn-primary">Logout</button>
+    </div>
+  </div>
+  <div class="admin-dropdown nav-btn-wrap pull-right" id="profile-menu">
+    <a class="backbone dropdown-toggle" href="" data-toggle="dropdown">
+      <div class="pic-wrap pic-wrap25">
+        <% if (_profile.avatar) { %>
+        <img src="<%= _profile.avatar %>" height="25" width="25">
+        <% } %>
+        <div class="shadow"></div>
+      </div>
+      <%= _profile.username %>
+      <% if (_profile.is_admin) { %><span class="label label-info">Admin User</span>
+      <% } else if (_profile.hacko_amount > 0) { %> <span class="label label-info js-navigation-hacko-count">Hackos: <%= _profile.hacko_amount %></span><% } %>
+      <i class="icon-down-open-mini"></i>
+    </a>
+    <span id="notification-badge" class="badge badge-important" style="float: right; position: absolute; top: 3px; right: -3px; display: none; z-index: 2000;"></span>
+    <ul class="unstyled dropdown-menu">
+      <li><a class="backbone" href="/<%= _profile.username %>">Profile</a></li>
+      <li><a class="backbone" href="<%= HR.appController.get_contest_namespace() %>/settings">Settings</a></li>
+      <li><a class="backbone" href="/dashboard">Dashboard</a></li>
+      <li id="tab-notifications">
+        <a class="backbone" href="<%= HR.appController.get_contest_namespace() %>/notifications">Notifications <span style="display: none;" class="badge badge-important"></span></a>
+      </li>
+      <li><a class="backbone" href="/manage">Administration</a></li>
+      <li><a class="logout-button">Logout</a></li>
+    </ul>
+  </div>
+  <% } else { %>
+  <div id="tab-login" class="login-prompt nav-btn-wrap pull-right">
+    <a href="/auth/login<%= HR.appController.get_contest_namespace() %>" class="login nav-btn">
+      <div class="pic-wrap pic-wrap25">
+        <img src="https://secure.gravatar.com/avatar/01b4d9a7a9c2fe4d64898d262abed00e?d=https://d3rpyts3de3lx8.cloudfront.net/hackerrank/assets/gravatar.jpg&s=25" height="25" width="25">
+        <div class="shadow"></div>
+      </div>
+      Log In
+    </a>
+  </div>
+  <% } %>
+</script>
+
+<script type="text/template" id="nav-buttons">
+  <ul class="nav pull-right btn-group">
+    <li class="nav-btn" id="tab-challenges">
+      <a class="backbone nav-link" href="<%= HR.appController.get_contest_namespace() %>/">Challenges</a>
+    </li>
+    <% if (activContest === undefined || activContest === null || activContest === "" || activContest === "master") { %>
+    <li class="nav-btn" id="tab-contests">
+      <a class="backbone nav-link" href="/contests">Contests</a>
+      <span id="contests-badge" class="badge badge-important" style="float: right; position: absolute; top: 3px; right: -3px; display: none;"></span>
+    </li>
+    <% } %>
+    <% if (profile.isLoggedIn()) { %>
+    <li class="nav-btn" id="tab-submissions">
+      <a class="backbone nav-link" href="<%= HR.appController.get_contest_namespace() %>/submissions">Submissions</a>
+    </li>
+    <% } %>
+    <li class="nav-btn" id="tab-leaderboard">
+      <a class="backbone nav-link" href="<%= HR.appController.get_contest_namespace() %>/leaderboard">Leaderboard</a>
+    </li>
+  </ul>
+</script>
+
+<script type="text/template" id="countdowntimer">
+    <p class="contest-status">
+        <small>
+            <% if (model.get('ended')) { %>
+            The contest has ended, further submissions will not affect the leaderboard.
+            <% } else if (model.get('started')) { %>
+            Contest is in progress.
+              <% if (model.get('epoch_endtime') !== null && model.nextMilestone()) { %>
+              It ends
+              <abbr class="timeago cursor" rel="tooltip" title="<%= model.nextMilestone().toISOString() %>">
+                  <%= model.nextMilestone().toString() %>
+              </abbr>.
+              <% } %>
+            <% } else { %>
+            Contest has not yet started. It starts
+            <abbr class="timeago cursor" rel="tooltip" title="<%= model.nextMilestone().toISOString() %>">
+                <%= model.nextMilestone().toString() %>
+            </abbr>.
+            <% } %>
+        </small>
+    </p>
+</script>
+
+<script type="text/template" id="verify-account">
+  <% if (_model.confirmed === false) { %>
+  <div class="message container text-center">
+      <h3 class="alpha">You have not verified your account</h3>
+      <p>Your username won't show up on the leaderboard until you click the link in the verification email we sent to <b><%= _model.email %></b></p>
+      <% if (verification_sent_status == 2) { %>
+      <p class="action-message">Verification Sent! Check your Inbox.<!-- ( <a class="send-verification">re-send?</a> ).--></p>
+      <% } else if (verification_sent_status == 1) { %>
+      <p class="action-message">Sending Verification...</p>
+      <% } else { %>
+      <p class="action-message"><a class="send-verification btn btn-blue">Re-send the verification email.</a></p>
+      <% } %>
+      <div class="close">&times</div>
+    </div>
+  </div>
+  <% } %>
+</script>
+
+<style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}
+.fb_invisible{display:none}
+.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}
+.fb_reset > div{overflow:hidden}
+.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}
+.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}
+.fb_dialog_content{background:#fff;color:#333}
+.fb_dialog_close_icon{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px;top:8px\9;right:7px\9}
+.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}
+.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}
+.fb_dialog_close_icon:hover{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}
+.fb_dialog_close_icon:active{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}
+.fb_dialog_loader{background-color:#f2f2f2;border:1px solid #606060;font-size:24px;padding:20px}
+.fb_dialog_top_left,
+.fb_dialog_top_right,
+.fb_dialog_bottom_left,
+.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}
+/* @noflip */
+.fb_dialog_top_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}
+/* @noflip */
+.fb_dialog_top_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}
+/* @noflip */
+.fb_dialog_bottom_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}
+/* @noflip */
+.fb_dialog_bottom_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}
+.fb_dialog_vert_left,
+.fb_dialog_vert_right,
+.fb_dialog_horiz_top,
+.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}
+.fb_dialog_vert_left,
+.fb_dialog_vert_right{width:10px;height:100%}
+.fb_dialog_vert_left{margin-left:-10px}
+.fb_dialog_vert_right{right:0;margin-right:-10px}
+.fb_dialog_horiz_top,
+.fb_dialog_horiz_bottom{width:100%;height:10px}
+.fb_dialog_horiz_top{margin-top:-10px}
+.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}
+.fb_dialog_iframe{line-height:0}
+.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3b5998;color:#fff;font-size:14px;font-weight:bold;margin:0}
+.fb_dialog_content .dialog_title > span{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif)
+no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}
+body.fb_hidden{-webkit-transform:none;height:100%;margin:0;left:-10000px;overflow:visible;position:absolute;top:-10000px;width:100%
+}
+.fb_dialog.fb_dialog_mobile.loading{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif)
+white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}
+.fb_dialog.fb_dialog_mobile.loading.centered{max-height:590px;min-height:590px;max-width:500px;min-width:500px}
+#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}
+#fb-root #fb_dialog_ipad_overlay.hidden{display:none}
+.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}
+.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0 0, 0 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}
+.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%
+}
+.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px
+}
+.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px
+}
+.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0 0, 0 100%, from(#4966A6),
+color-stop(0.5, #355492), to(#2A4887));border:1px solid #29447e;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset,
+rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}
+.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}
+.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}
+.fb_dialog_content .dialog_content{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}
+.fb_dialog_content .dialog_footer{background:#f2f2f2;border:1px solid #555;border-top-color:#ccc;height:40px}
+#fb_dialog_loader_close{float:left}
+.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}
+.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
+.fb_iframe_widget{display:inline-block;position:relative}
+.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}
+.fb_iframe_widget iframe{position:absolute}
+.fb_iframe_widget_lift{z-index:1}
+.fb_hide_iframes iframe{position:relative;left:-10000px}
+.fb_iframe_widget_loader{position:relative;display:inline-block}
+.fb_iframe_widget_fluid{display:inline}
+.fb_iframe_widget_fluid span{width:100%}
+.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}
+.fb_iframe_widget_loader .FB_Loader{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_connect_bar_container div,
+.fb_connect_bar_container span,
+.fb_connect_bar_container a,
+.fb_connect_bar_container img,
+.fb_connect_bar_container strong{background:none;border-spacing:0;border:0;direction:ltr;font-style:normal;font-variant:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal;vertical-align:baseline}
+.fb_connect_bar_container{position:fixed;left:0 !important;right:0 !important;height:42px !important;padding:0 25px !important;margin:0 !important;vertical-align:middle !important;border-bottom:1px solid #333 !important;background:#3b5998 !important;z-index:99999999 !important;overflow:hidden !important}
+.fb_connect_bar_container_ie6{position:absolute;top:expression(document.compatMode=="CSS1Compat"? document.documentElement.scrollTop+"px":body.scrollTop+"px")}
+.fb_connect_bar{position:relative;margin:auto;height:100%;width:100%;padding:6px 0 0 0 !important;background:none;color:#fff !important;font-family:"lucida grande", tahoma, verdana, arial, sans-serif !important;font-size:13px !important;font-style:normal !important;font-variant:normal !important;font-weight:normal !important;letter-spacing:normal !important;line-height:1 !important;text-decoration:none !important;text-indent:0 !important;text-shadow:none !important;text-transform:none !important;white-space:normal !important;word-spacing:normal !important}
+.fb_connect_bar a:hover{color:#fff}
+.fb_connect_bar .fb_profile img{height:30px;width:30px;vertical-align:middle;margin:0 6px 5px 0}
+.fb_connect_bar div a,
+.fb_connect_bar span,
+.fb_connect_bar span a{color:#bac6da;font-size:11px;text-decoration:none}
+.fb_connect_bar .fb_buttons{float:right;margin-top:7px}
+.fb_edge_widget_with_comment{position:relative;*z-index:1000}
+.fb_edge_widget_with_comment span.fb_edge_comment_widget{position:absolute}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget{z-index:1}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget .FB_Loader{left:0;top:1px;margin-top:6px;margin-left:0;background-position:50% 50%;background-color:#fff;height:150px;width:394px;border:1px #666 solid;border-bottom:2px solid #283e6c;z-index:1}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget.dark .FB_Loader{background-color:#000;border-bottom:2px solid #ccc}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget.siderender
+.FB_Loader{margin-top:0}
+.fbpluginrecommendationsbarleft,
+.fbpluginrecommendationsbarright{position:fixed !important;bottom:0;z-index:999}
+/* @noflip */
+.fbpluginrecommendationsbarleft{left:10px}
+/* @noflip */
+.fbpluginrecommendationsbarright{right:10px}</style></head>
+<body id="HackerRank-main">
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tab-index="-1" src="./Challenges   Programming problems and challenges   HackerRank_files/xd_arbiter.htm" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+    <script>
+      window.fbAsyncInit = function() {
+        // init the FB JS SDK
+        FB.init({
+          appId      : '347499128655783',                // App ID from the app dashboard
+          channelUrl : '//www.hackerrank.com/channel.html', // Channel file for x-domain comms
+          status     : true,                                 // Check Facebook Login status
+          xfbml      : true                                  // Look for social plugins on the page
+        });
+      };
+      // Load the SDK asynchronously
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/all.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    
+
+    
+    <div id="wrapper" style="min-height: 527px;">
+        <div id="navigation">
+  <header id="page-header">
+    <nav class="page-nav container navbar">
+      <span class="nav-logo"><a href="https://www.hackerrank.com/" class="HackerRankLogo backbone"><img src="./Challenges   Programming problems and challenges   HackerRank_files/hackerranklogo_green.png" height="42" width="198" alt="HackerRank Home"></a></span>
+      <span class="nav-login-patch">
+  
+  <!-- Logout confirmation modal -->
+  <div id="logoutConfirmation" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="logoutConfirmationLabel" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <h3 id="logoutConfirmationLabel">Logout?</h3>
+    </div>
+    <div class="modal-body">
+      <p>We'll really miss you :(</p><p>Could you tell us what we could do to improve your experience?</p>
+      <textarea placeholder="Feedback" id="logout-feedback" style="height: 160px; width: 98%;"></textarea>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+      <button id="confirm-logout" class="btn btn-primary">Logout</button>
+    </div>
+  </div>
+  <div class="admin-dropdown nav-btn-wrap pull-right" id="profile-menu">
+    <a class="backbone dropdown-toggle" href="" data-toggle="dropdown">
+      <div class="pic-wrap pic-wrap25">
+        
+        <img src="./Challenges   Programming problems and challenges   HackerRank_files/convert" height="25" width="25">
+        
+        <div class="shadow"></div>
+      </div>
+      Klick
+       <span class="label label-info js-navigation-hacko-count">Hackos: 201</span>
+      <i class="icon-down-open-mini"></i>
+    </a>
+    <span id="notification-badge" class="badge badge-important" style="float: right; position: absolute; top: 3px; right: -3px; display: none; z-index: 2000;"></span>
+    <ul class="unstyled dropdown-menu">
+      <li><a class="backbone" href="https://www.hackerrank.com/Klick">Profile</a></li>
+      <li><a class="backbone" href="https://www.hackerrank.com/contests/101june13/settings">Settings</a></li>
+      <li><a class="backbone" href="https://www.hackerrank.com/dashboard">Dashboard</a></li>
+      <li id="tab-notifications">
+        <a class="backbone" href="https://www.hackerrank.com/contests/101june13/notifications">Notifications <span style="display: none;" class="badge badge-important"></span></a>
+      </li>
+      <li><a class="backbone" href="https://www.hackerrank.com/manage">Administration</a></li>
+      <li><a class="logout-button">Logout</a></li>
+    </ul>
+  </div>
+  
+</span>
+      <span class="nav-buttons">
+  <ul class="nav pull-right btn-group">
+    <li class="nav-btn" id="tab-challenges">
+      <a class="backbone nav-link" href="https://www.hackerrank.com/contests/101june13/challenges">Challenges</a>
+    </li>
+    
+    
+    <li class="nav-btn" id="tab-submissions">
+      <a class="backbone nav-link" href="https://www.hackerrank.com/contests/101june13/submissions">Submissions</a>
+    </li>
+    
+    <li class="nav-btn" id="tab-leaderboard">
+      <a class="backbone nav-link" href="https://www.hackerrank.com/contests/101june13/leaderboard">Leaderboard</a>
+    </li>
+  </ul>
+</span>
+    </nav>
+  </header>
+</div>
+        <div id="verifyaccount">
+  
+</div>
+        <div id="ajax-msg-wrap"><div id="ajax-msg" style="margin-top: 0px; margin-left: 0px; display: none;"><span class="ajax-loader"></span><span class="ajax-msg"></span></div></div>
+        <div id="countdowntimer" style="display: block;">
+    <p class="contest-status">
+        <small>
+            
+            Contest is in progress.
+              
+              It ends
+              <abbr class="timeago cursor" rel="tooltip" title="Sun Jun 30 2013 01:30:58 GMT+0530 (India Standard Time)">10 minutes from now</abbr>.
+              
+            
+        </small>
+    </p>
+</div>
+        <div id="flash"></div>
+        <div id="submission-success-messages"><div id="submission-model-696598" style="" class="submission-model-panel"><p class="container">
+  </p><center>
+    <span>
+      Your Anagram
+      <a class="backbone" href="https://www.hackerrank.com/contests/101june13/submissions/code/696598">submission</a>
+      got 30 points.
+    </span>
+    &nbsp;&nbsp;&nbsp;
+<a class="fb-share" style="cursor:pointer;"><img src="./Challenges   Programming problems and challenges   HackerRank_files/fb-share.png"></a>
+&nbsp;&nbsp;&nbsp;
+<a class="tweet" style="cursor:pointer;"><img src="./Challenges   Programming problems and challenges   HackerRank_files/tweet-filler.png"></a>
+<a class="backbone" href="https://www.hackerrank.com/contests/101june13/challenges/anagram/leaderboard">Go to leaderboard</a>
+  </center>
+<p></p>
+<a class="close" style="cursor: pointer;">×</a></div></div>
+        <div id="content"><div class="challenge-view"><section class="challenge-interface container"><div class="challenge-header"><header class="page-title container">
+    <div class="clearfix">
+        <div class="breadcrumbs pull-left"><div class="breadcrumbs-view">
+  <ul class="breadcrumb unstyled horizontal">
+    
+    <li>
+      <a href="https://www.hackerrank.com/contests" class="backbone">
+        Contests
+      </a>
+      <i class="icon-right-open-big divider"></i>
+    </li>
+    
+    <li>
+      <a href="https://www.hackerrank.com/contests/101june13/challenges" class="backbone">
+        101 Hack June
+      </a>
+      <i class="icon-right-open-big divider"></i>
+    </li>
+    
+  </ul>
+</div></div>
+        <ul class="pull-right challenge-links horizontal unstyled btn-group">
+          <li class="btn btn-white"><a href="https://www.hackerrank.com/contests/101june13/challenges/assignment/submissions" class="backbone"><i class="icon-list-bullet-small"></i> <span class="icon-text">Submissions</span></a></li>
+          <li class="btn btn-white"><a href="https://www.hackerrank.com/contests/101june13/challenges/assignment/leaderboard" class="backbone submit" data-analytics="Challenge Leaderboard"><i class="icon-trophy"></i> <span class="icon-text">Leaderboard</span></a></li>
+          <li class="btn btn-white"><a href="https://www.hackerrank.com/contests/101june13/challenges/assignment/forum/questions" class="backbone submit" data-analytics="View Forum"><i class="icon-comment"></i> <span class="icon-text">Discuss</span></a></li>
+        </ul>
+    </div>
+    
+    
+    
+    <h1 class="">Assignment Problem
+
+        
+        
+        <div class="pull-right challenge-title-note">
+          
+        </div>
+        
+    </h1>
+</header>
+ </div><div class="challenge-body"><div class="challenge-content">
+
+<div class="challenge-text light-wrap content-text">
+    <!-- === begin markdown block ===
+
+      generated by markdown 1.1.1 on Ruby 1.9.3 (2012-12-25) [x86_64-linux]
+                on 2013-06-29 18:22:04 +0000 with Markdown engine kramdown (1.0.2)
+                  using options {}
+  -->
+<p>Calvin has a math assignment at school where he has to evaluate a lot of expressions. Calvin decides to not to waste much of his time. There are ‘M’ expressions overall. By looking at Susie’s answers, Calvin has figured that the answers to all questions form a non decreasing sequence. </p>
+
+<p>He decides that all his answers are going to be between 1 and ‘N’ (inclusive). He fills his answer sheet with a random non-decreasing sequence of length ‘M’ where each element is between 1 and ‘N’. </p>
+
+<p>Here is the part where the real problem starts for Calvin. He does not want to choose a large value of N, because, he will have a lot of options to choose from. Also, if he chooses a very small value of N, a lot of answers would become equal and the teacher will become suspicious. </p>
+
+<p>If x = max<sub>1≤i≤N</sub>(frequency (i)),
+frequency (i) being the number of times i occurs in the sequence of ‘M’ values he picked. Calvin wants to find out <a href="http://en.wikipedia.org/wiki/Expected_value" target="_blank">expected value</a> of x. Help him solve the problem.</p>
+
+<p>For example, if M = 3 &amp; N = 3, the possible sequences are:<br>
+1 1 1 (x = 3)<br>
+1 1 2 (x = 2)<br>
+1 1 3 (x = 2)<br>
+1 2 2 (x = 2)<br>
+1 2 3 (x = 1)<br>
+1 3 3 (x = 2)<br>
+2 2 2 (x = 3)<br>
+2 2 3 (x = 2)<br>
+2 3 3 (x = 2)<br>
+3 3 3 (x = 3)  </p>
+
+<p>expected value of x = 2.2</p>
+
+<p><strong>Input Format</strong><br>
+The first line contains an integer T which refers to the number of test cases. T lines follow, each containing 2 numbers, M and N for the corresponding test cases.</p>
+
+<p><strong>Constraints</strong>  </p>
+
+<pre><code>T ≤ 15
+1 ≤ M ≤ 250
+1 ≤ N ≤ 10^9
+</code></pre>
+
+<p><strong>Output Format</strong><br>
+Output T lines, each containing answer to the corresponding test case. Error of upto 10^-3 is allowed.</p>
+
+<p><strong>Sample Input</strong>  </p>
+
+<pre><code>4
+1 5
+3 3
+2 9
+9 6
+</code></pre>
+
+<p><strong>Sample Output</strong>  </p>
+
+<pre><code>1.0000000000
+2.2000000000
+1.2000000000
+4.3146853147
+</code></pre>
+
+<p><strong>Explanation</strong><br>
+The second test-case is explained <a href="https://cdn.hackerrank.com/assignment.jpg">here</a></p>
+<!-- === end markdown block === -->
+
+    <p class="text-align-right"><a href="https://www.hackerrank.com/#" align="right" class="js-suggest-edits">Suggest Edits</a></p>
+</div>
+<div> 
+  <div class="formgroup clearfix m">
+    <div class="alert error hide"></div>
+  </div>
+  <form id="suggestion-form" class="hide suggestion-form">
+    <p class="text-center"> Thanks for helping us refine this problem statement. Please address your suggestions below. </p>
+    <textarea id="suggestion" rows="10" class="span16"></textarea>
+    <div class="span5 access-buttons pull-right">
+      <button class="btn btn-primary js-suggestion-save pull-right" data-analytics="Submit Suggestion">Submit Suggestion</button>
+      <button class="btn btn-white js-suggestion-cancel pull-right" data-analytics="Cancel Suggestion">Cancel</button>
+    </div>
+  </form>
+</div>
+<br>
+</div><div class="challenge-request"><div class="challenge-input codeeditor-wrapper">        <div class="capped codeeditor-header-wrapper"><div class="challenge-options light-cap gradient-black clearfix">
+    <div class="pull-left span3 clear-margin">
+        <div class="select2-container pull-left clear-margin" id="s2id13">    <a href="javascript:void(0)" class="select2-choice">   <span>Python 2</span><abbr class="select2-search-choice-close" style="display:none;"></abbr>   <div><b></b></div></a>    <div class="select2-drop select2-offscreen">   <div class="select2-search">       <input type="text" autocomplete="off" class="select2-input">   </div>   <ul class="select2-results">   </ul></div></div><input class="pull-left clear-margin" type="text" id="language-select" style="display: none;">
+    </div>
+    <ul class="pull-right horizontal unstyled">
+        <li><div class="editor-options inline btn-group">
+              <a href="" class="emacs btn btn-black editor-mode-button" data-editor="emacs">Emacs</a>
+              <a href="" class="default btn btn-black editor-mode-button disabled" data-editor="default">Normal</a>
+              <a href="" class="vim btn btn-black editor-mode-button" data-editor="vim">Vim</a>
+            </div>
+        </li>
+        <li><a href="" class="revert btn btn-black"><i class="icon-back-in-time"></i> Revert Code</a></li>
+        <li><a class="fullscreen btn btn-black active-link" data-analytics="Switch to fullscreen">Switch to fullscreen</a></li>
+        <li><a class="restorefullscreen btn btn-black force-hide active-link">Restore from fullscreen</a></li>
+    </ul>
+</div>
+</div>        <div class="codeeditor-body-wrapper"><div>
+	<div class="code-checker light-wrap wrap">
+    <textarea id="codeeditor" style="display: none;"></textarea><div class="CodeMirror cm-s-default CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 225px; left: 223px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar" style="left: 29px;"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar" style=""><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler" style=""></div><div class="CodeMirror-gutter-filler" style=""></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 29px; min-height: 308px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span> </span><span>&nbsp;</span><span> </span><span>&nbsp;</span><span> </span><span>&nbsp;</span><span> </span><span>&nbsp;</span><span> </span><span>&nbsp;</span><span> </span><span> </span><span class="cm-variable">t</span><span class="cm-variable">e</span><span class="cm-variable">m</span><span class="cm-variable">p</span><span> </span><span>=</span><span> </span></pre></div><div style="position: relative; z-index: 1; display: none;"><div class="CodeMirror-selected" style="position: absolute; left: 134px; top: 141px; width: 120px; height: 18px;"></div></div><div class="CodeMirror-code" style=""><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">1</div></div><pre><span class="cm-comment"># Enter your code here. Read input from STDIN. Print output to STDOUT</span></pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">2</div></div><pre>&nbsp;</pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">3</div></div><pre><span class="cm-variable">t</span> = <span class="cm-builtin">input</span>()</pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">4</div></div><pre>&nbsp;</pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">5</div></div><pre><span class="cm-keyword">for</span> <span class="cm-variable">r</span> <span class="cm-operator">in</span> <span class="cm-builtin">xrange</span>(<span class="cm-variable">t</span>):</pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">6</div></div><pre> &nbsp;  <span class="cm-variable">m</span>,<span class="cm-variable">n</span> = <span class="cm-builtin">map</span>(<span class="cm-builtin">int</span>,<span class="cm-builtin">raw_input</span>().<span class="cm-variable">split</span>())</pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">7</div></div><pre> &nbsp;  </pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">8</div></div><pre> &nbsp;  <span class="cm-variable">c</span> = <span class="cm-number">1</span></pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">9</div></div><pre> &nbsp;  </pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">10</div></div><pre> &nbsp;  <span class="cm-keyword">for</span> <span class="cm-variable">j</span> <span class="cm-operator">in</span> <span class="cm-builtin">xrange</span>(<span class="cm-number">1</span>,<span class="cm-variable">n</span>):</pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">11</div></div><pre> &nbsp; &nbsp; &nbsp;  <span class="cm-keyword">for</span> <span class="cm-variable">i</span> <span class="cm-operator">in</span> <span class="cm-builtin">xrange</span>(<span class="cm-number">1</span>,<span class="cm-variable">c</span>):</pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">12</div></div><pre> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-variable">temp</span> = </pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">13</div></div><pre> &nbsp; &nbsp; &nbsp;  </pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">14</div></div><pre>&nbsp;</pre></div><div style="position: relative;"><div style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">15</div></div><pre>&nbsp;</pre></div></div><div class="CodeMirror-cursor" style="left: 194px; top: 221px; height: 18px;">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor" style="display: none;">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 308px;"></div><div class="CodeMirror-gutters" style="height: 308px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 28px;"></div></div></div></div>
+    <div id="codeeditor-statusbar">
+      <span id="statusbar-mode"></span>
+      <div class="pull-right">
+        <span id="statusbar-line">Line: 12</span>
+        <span id="statusbar-col">Col: 20</span>
+        <span id="statusbar-count">Count: 249</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+	</div>
+</div>
+</div>        <div class="codeeditor-footer-wrapper"><div class="code-checker-sub">
+    
+    <div>
+        <label for="customtestcase"><input type="checkbox" id="customtestcase">Use a custom test case</label>
+        <textarea rows="5" class="span8 hide" id="custominput"></textarea>
+    </div>
+    
+    <div class="pull-left access-buttons full-width">
+      
+      <button class="btn btn-white compile pull-left" data-analytics="Compile and Test">Compile &amp; Test</button>
+      
+      <button class="btn btn-primary submit pull-left" data-analytics="Submit Code">Submit Code</button>
+
+      <div class="pull-right">
+          <button class="btn btn-text upload_file" data-analytics="Upload File"><i class="icon-upload"></i> Upload Code as File</button>
+      </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+<br>
+</div></div>
+</div><div class="challenge-response"><div class="output-progress light-wrap hide">Processing</div>
+<div class="output-area-wrap">
+  <div class="output-area light-wrap" id="output-area">
+    
+        
+          
+        
+    
+    
+        <div class="compile-time">
+            <div class="rotate">Compile Time</div>
+            <p class="field-label">Compile Message</p>
+            
+                <pre class="error-output"><xmp>Compiling /run-IhFzuQGHOXSEhk0gCeiz/solution.py ...
+</xmp></pre>
+            
+            
+        </div>
+    
+    
+        
+            <div class="run-time">
+                <div class="rotate">Run Time</div>
+                
+                    <p class="title">Score: 0</p>
+                
+                
+                    <p class="title">Testcase# 1</p>
+                    <p class="field-label">Input</p>
+                    <pre class="error-output"><xmp>4      
+1 5
+3 3
+2 9
+9 6</xmp></pre>
+
+                    <p class="field-label">Your Output</p>
+                    
+                        <pre class="error-output"><xmp>1 5
+3 3
+2 9
+9 6
+</xmp></pre>
+                    
+
+                    <p class="field-label">Expected Output</p>
+                    
+                        <pre class="error-output"><xmp>1.0000000000
+2.2000000000
+1.2000000000
+4.3146853147</xmp></pre>
+                    
+
+                    
+
+                    
+                
+            </div>
+        
+    
+
+</div>
+</div></div></div></section></div></div>
+            <div id="chat">
+                <div id="chat-header" class="pull-right cursor"><span class="pull-left">Chat</span><i id="chat-minmax-icn" class="icon-chevron-up pull-right chat-chevron-up"></i></div>
+                <div id="gaglers-wrapper" class="pull-right" style="display: none; height: 0px;">
+                    <div id="gaglers-widget"><iframe src="./Challenges   Programming problems and challenges   HackerRank_files/saved_resource.htm" id="chatwidget" allowtransparency="true" frameborder="0" scrolling="no" style="position: fixed; right: 0px; bottom: 0px; border: 0px; overflow: hidden; z-index: 800; height: 100%; width: 100%;"></iframe></div>
+                    <script type="text/javascript">
+                            $(function() {
+            window.hr_gaglers_mention_callback = function () {
+                $("#chat-header").addClass("chat-header-red");
+                $("#gaglers-wrapper").addClass("gaglers-wrapper-red");
+                window.prechathighlighttitle = document.title;
+                document.title = "**Someone has mentioned your nick**";
+            }
+
+            window.hr_gaglers_focusin_callback = function () {
+                $("#chat-header").removeClass("chat-header-red");
+                $("#gaglers-wrapper").removeClass("gaglers-wrapper-red");
+                document.title = window.prechathighlighttitle;
+            }
+
+var gagler_cmdString = "a0c2b79fffb74bdfdf722a212f5639739b511f51|1372528981|v=0.1;c=login;role=u;un=S2xpY2s=";
+var chatOptions = {
+        "interest":"Gaglers Chat",
+        "mentioncallback": window.hr_gaglers_mention_callback,
+        "focusincallback": window.hr_gaglers_focusin_callback,
+        "style": ""
+    };
+    window.gagler_cmdString = gagler_cmdString;
+    window.chatOptions = chatOptions;
+(function() {
+    var gag = document.createElement('script'); gag.type = 'text/javascript';
+    gag.async = true; gag.src = 'https://groups.gaglers.com/client/js/embed/';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gag, s);
+})();
+});
+
+                    </script>
+                </div>
+            </div>
+        <div id="hacker"></div>
+    </div>
+    <footer>
+    <div class="container">
+        <div class="text-center">
+            This is a beta version. Join us on IRC at <a target="_blank" href="http://webchat.freenode.net/?channels=hackerrank">#hackerrank</a> on freenode for hugs or bugs.
+            <br>
+            <p style="font-size: 14px; margin-top: 5px; margin-bottom: 0px;"><span class="internal-links"><a target="_blank" href="https://www.hackerrank.com/calendar" class="calendar">Calendar</a> | <a target="_blank" href="https://www.hackerrank.com/blog" class="blog">Blog</a> | <a target="_blank" href="https://www.hackerrank.com/scoring" class="scoring">Scoring</a> | <a target="_blank" href="https://www.hackerrank.com/environment" class="environment">Environment</a> | <a target="_blank" href="https://www.hackerrank.com/faq" class="faq">FAQ</a> |</span> <a target="_blank" href="https://www.hackerrank.com/aboutus">About Us</a> | <a target="_blank" href="https://www.hackerrank.com/careers">Careers</a> | <a target="_blank" href="https://www.hackerrank.com/privacy">Privacy Policy</a> | <a href="https://www.hackerrank.com/#" class="featureRequestButton">Request a feature</a></p>
+        </div>
+    </div>
+</footer>
+<script>
+    if ($) {
+        $(document).ready(function() {
+            $(".featureRequestButton").bind("click",function(e){
+                e.preventDefault();
+                feature = new HR.util.ShowFeatureRequestDialog();
+                feature.render();
+            });
+        });
+    }
+</script>
+
+    <script type="text/javascript">
+        (function(c,a){window.mixpanel=a;var b,d,h,e;b=c.createElement("script");
+        b.type="text/javascript";b.async=!0;b.src=("https:"===c.location.protocol?"https:":"http:")+
+        '//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';d=c.getElementsByTagName("script")[0];
+        d.parentNode.insertBefore(b,d);a._i=[];a.init=function(b,c,f){function d(a,b){
+        var c=b.split(".");2==c.length&&(a=a[c[0]],b=c[1]);a[b]=function(){a.push([b].concat(
+        Array.prototype.slice.call(arguments,0)))}}var g=a;"undefined"!==typeof f?g=a[f]=[]:
+        f="mixpanel";g.people=g.people||[];h=['disable','track','track_pageview','track_links',
+        'track_forms','register','register_once','unregister','identify','alias','name_tag',
+        'set_config','people.set','people.increment','people.track_charge','people.append'];
+        for(e=0;e<h.length;e++)d(g,h[e]);a._i.push([b,c,f])};a.__SV=1.2;})(document,window.mixpanel||[]);
+        mixpanel.init('bcb75af88bccc92724ac5fd79271e1ff');
+        mixpanel.identify($.cookie('hackerrank_mixpanel_token'));
+        mixpanel.name_tag('Klick');
+        mixpanel.track('pageView' , {'User Name' : 'Klick', 'Domain': 'www.hackerrank.com', 'Page' : window.location.pathname});
+
+        $('a, button, input').live('click', function(e) {
+            src = $(e.target);
+            action = ''; data = '';
+            if (src.attr('data-analytics')) {
+              action = 'Click';
+              data = src.attr('data-analytics');
+            } else {
+              return;
+            }
+
+            page = src.closest('a').attr("href");
+            if (!page) { page = HR.current_page; }
+
+            tracking_data = new Object
+            if (window.mixpanel_data.contest != "") tracking_data.Contest = window.mixpanel_data.contest;
+            if (window.mixpanel_data.challenge != "") tracking_data.Challenge = window.mixpanel_data.challenge;
+            tracking_data.UserName = 'Klick'
+            tracking_data.Data = data
+            tracking_data.Page = page
+            tracking_data.Domain = 'www.hackerrank.com'
+            mixpanel.track(action, tracking_data);
+            _gaq.push(['_trackEvent', 'Events' , action, data, 1]);
+        });
+
+        (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
+
+        var heap=heap||[];heap.load=function(a){window._heapid=a;var b=document.createElement("script");b.type="text/javascript",b.async=!0,b.src=("https:"===document.location.protocol?"https:":"http:")+"//d36lvucg9kzous.cloudfront.net";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c);var d=function(a){return function(){heap.push([a].concat(Array.prototype.slice.call(arguments,0)))}},e=["identify","track"];for(var f=0;f<e.length;f++)heap[e[f]]=d(e[f])};
+        heap.load("2468471743");
+
+        setTimeout(function(){var a=document.createElement("script");
+            var b=document.getElementsByTagName("script")[0];
+            a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0014/2746.js?"+Math.floor(new Date().getTime()/3600000);
+            a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+    </script>
+
+
+
+</body></html>

@@ -1,0 +1,181 @@
+var Gaglers = {
+
+    origTitle: document.title,
+    bInFocus: true,
+    msgTimer: 0, 
+    msgInterval: 0,
+    bIFrameLoaded: false,
+    bInitialised: false,
+
+    mentionCallback: function(msg){
+        if (!Gaglers.bInFocus) {
+            if (Gaglers.msgInterval != 0) {
+                clearInterval(Gaglers.msgInterval);
+            }
+            Gaglers.msgInterval = setInterval(function(){Gaglers.changeTitle(msg);},
+                 2000);
+        }
+    },
+
+    focusinCallback: function() {
+    },
+
+    scrollBottom: function(e) {
+        Gaglers.sendMessage('scrollbottom', '');
+    },
+
+    handleFocusIn: function(e) {
+        Gaglers.clearTitleChange();
+        Gaglers.sendMessage('focusin', '');
+    },
+
+    handleFocusOut: function(e) {
+        Gaglers.bInFocus = false;
+        Gaglers.sendMessage('focusout', '');
+    },
+
+    sendMessage:function(type, message){
+        var msg = type+"|"+message;
+        document.getElementById("chatwidget").contentWindow.postMessage(msg, "*");
+    },
+
+    handleChatMessage: function(e) { 
+        var message = e.data.split("|");
+        var type = message[message.length - 1];
+        if (type == 'resize') {
+            document.getElementById('chatwidget').style.height=message[0];
+            document.getElementById('chatwidget').style.width=message[1];
+        } else if (type == 'chat') {
+            if (!Gaglers.bInFocus) {
+                if (Gaglers.msgInterval != 0) {
+                    clearInterval(Gaglers.msgInterval);
+                }
+                Gaglers.msgInterval = setInterval(function(){Gaglers.changeTitle(message[0]);},
+                     2000);
+            }
+        } else if (type == 'focusin') {
+              Gaglers.clearTitleChange();
+              Gaglers.focusinCallback();
+        } else if (type == 'focusout') {
+              Gaglers.bInFocus = false;
+        } else if (type == 'mention') {
+              Gaglers.mentionCallback(message[0]);
+        }
+    } ,
+
+    changeTitle: function(message) {
+        if (Gaglers.msgTimer != 0) {
+          clearTimeout(Gaglers.msgTimer);
+        }
+        document.title = message;
+        Gaglers.msgTimer = setTimeout(function(){document.title=Gaglers.origTitle;}, 1000);
+    },
+
+    clearTitleChange: function() {
+        Gaglers.bInFocus = true;
+        clearTimeout(Gaglers.msgTimer);
+        clearInterval(Gaglers.msgInterval);
+        Gaglers.msgInterval = 0; Gaglers.msgTimer = 0;
+        document.title = Gaglers.origTitle;
+    },
+
+    gaglerInit:function(){
+        Gaglers.onjQueryLoad();
+    },
+
+    onjQueryLoad: function(){
+        Gaglers.bInitialised = true;
+        if (!Gaglers.bIFrameLoaded) {
+            Gaglers.bIFrameLoaded = true;
+            var srcUrl = "//groups.gaglers.com/chat/?";
+            var qStr = ""
+            qStr += "origin="+encodeURIComponent(window.location.href);
+            qStr += "&interest="+encodeURIComponent(chatOptions["interest"]);
+            var mention_cbk = chatOptions["mentioncallback"];
+            if (mention_cbk) {
+                Gaglers.mentionCallback = mention_cbk;
+            }
+            var focusin_cbk = chatOptions["focusincallback"];
+            if (focusin_cbk) {
+                Gaglers.focusinCallback = focusin_cbk;
+            }
+            var color = chatOptions["color"];
+            if (color) {
+                qStr += "&color="+encodeURIComponent(color);
+            }
+            var operator = chatOptions["operatorname"];
+            if (operator) {
+                qStr += "&operatorname="+encodeURIComponent(operator);
+            }
+            var sa = chatOptions["showalways"];
+            if (sa) {
+                qStr += "&sa="+encodeURIComponent(sa);
+            }
+            var su = chatOptions["support"];
+            if (su) {
+                qStr += "&su="+encodeURIComponent(su);
+            }
+            var isOpen = chatOptions["open"];
+            if (isOpen) {
+                qStr += "&open="+encodeURIComponent(isOpen);
+            }
+            if (typeof gagler_cmdString != 'undefined') {
+                qStr += "&gc="+encodeURIComponent(gagler_cmdString);
+            }
+            var style = chatOptions["style"];
+            var iFrameStyle = "position:fixed;right:0;bottom:0;border:0;overflow:hidden;z-index:800;";
+            if (style) {
+                iFrameStyle = style;
+            }
+            iFrameStyle += "height:100%;width:100%;";
+            encodedUrl = srcUrl + qStr;
+            var gFrame = document.createElement('iframe');
+            gFrame.src = encodedUrl;
+            gFrame.id = "chatwidget";
+            gFrame.setAttribute("allowtransparency", "true");
+            gFrame.setAttribute("frameborder", "0");
+            gFrame.setAttribute("scrolling", "no");
+            gFrame.setAttribute("style", iFrameStyle);
+            
+document.getElementById('gaglers-widget').appendChild(gFrame);
+
+        }
+
+        if(typeof window.addEventListener != 'undefined') { 
+          window.addEventListener('message', Gaglers.handleChatMessage, false); 
+          window.addEventListener('focusin', Gaglers.handleFocusIn, false);
+          window.addEventListener('focusout', Gaglers.handleFocusOut, false);
+        } 
+        else if(typeof window.attachEvent != 'undefined') { 
+          window.attachEvent('onmessage', Gaglers.handleChatMessage); 
+          window.attachEvent('onfocusin', Gaglers.handleFocusIn);
+          window.attachEvent('onfocusout', Gaglers.handleFocusOut);
+        }
+    },
+
+    handleReady:function(){
+        if (!Gaglers.bInitialised) {
+            Gaglers.gaglerInit();
+        }
+    },
+
+    handleLoad:function(){
+        if (!Gaglers.bInitialised) {
+            Gaglers.gaglerInit();
+        }
+    }
+};
+
+if(typeof window.addEventListener != 'undefined') {
+  window.addEventListener('load', Gaglers.handleLoad, false);
+  window.addEventListener('readystatechange', Gaglers.handleReady, false);
+}
+else if(typeof window.attachEvent != 'undefined') {
+  window.attachEvent('onload', Gaglers.handleLoad);
+  window.attachEvent('onreadystatechange', Gaglers.handleReady);
+} else {
+  window.onload = Gaglers.handleLoad;
+  window.onreadystatechange = Gaglers.handleReady;
+}
+
+
